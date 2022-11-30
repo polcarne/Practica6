@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>formulari.html</title>
+        <!--vinculacio a full css-->
+        <link rel="stylesheet" href="estilformulari.css">
+    </head>
+    <body>
+            <h1>El meu primer formulari</h1>
+            <h5>Les teves dades personals</h5>
+            <!--El form conté tota la informació del formulari , que quedara en el mateix submit-->
+        <form action= "resultat.html"> 
+            <!--Noms cognoms i Edat -->
+                <label for="nom">Nom:</label>
+                <input class=amplada1 type="text" id="nom" name="nom">
+                <label for="cognom">Cognom:</label>
+                <input class=amplada1 id="cognom" name="cognom">
+                <br>
+                <br>
+                <label for="edat">Edat:</label>
+                <input class=amplada2 type="number" id="edat" name="edat"><br>
+            
+            <h5>Marca els llenguatges de programacio que mes t'agraden:</h5>
+            <!--LLenguatges de programació, cada label és un-->
+            
+                    <input type="checkbox" id="llen1" name="llen1" value="HTML" checked>
+                    <label for="llen1"> HTML</label><br>
+                    <input type="checkbox" id="llen2" name="llen2" value="CSS">
+                    <label for="llen2"> CSS</label><br>
+                    <input type="checkbox" id="llen3" name="llen3" value="XML">
+                    <label for="llen3"> XML</label>
+            
+            <h5>Selecciona el cicle formatiu que vols cursar:</h5>
+            <p>Selecciona el cicle:</p>
+            <!--Cicles formatius per seleccionar-->
+            
+                <input type="radio" id="asix" name="cicle" value="ASIX" checked>
+                <label for="asix">ASIX</label><br>
+                <input type="radio" id="dam" name="cicle" value="DAM">
+                <label for="dam">DAM</label><br>
+                <input type="radio" id="daw" name="cicle" value="DAW">
+                <label for="daw">DAW</label><br><br>
+            
+            <!--Seleccio de curs-->
+                <label for="curs">Selecciona el curs:</label>
+                <select class="curs" name="curs">
+                    <option class="curs">Primer</option>
+                    <option class="curs">Segon</option>
+                </select>
+            
+            <p>Observacions:</p>
+            <!--Quadre de text per a les observacions-->
+                <textarea name="comentaris" rows="10" cols="40">Escriu el teu missatge</textarea><br><br>
+                <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>
